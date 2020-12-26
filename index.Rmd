@@ -1,0 +1,59 @@
+---
+title: "Auxiliary data to Automatic Responses to Acoustically Rough Intervals"
+output: html_document
+bibliography: refs.bib
+biblio-style: "apalike"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+_Created: 26/12/2020_.
+
+These files contains the data and analysis scripts for "Automatic Responses to Acoustically Rough Intervals" concerning computational models of roughness and harmonicity.
+
+## Harmonicity
+
+Harmonicity for three common models: @harrison2018, @parncutt1988 and @milne2013computational, including the ranks of the model means and the model correlations.
+
+```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
+# Harmonicity 3 models: Harrison and Pearce 2018, Parncutt88, Milne13 
+source('model_harmonicity_data.R')
+```
+
+## Roughness
+
+Roughness values for three common models: @hutchknopoff1978, @vassilakis2001perceptual, and @wang2013roughness, including the ranks of the model means and the model correlations.
+
+```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
+# Roughness 3 models: Hutchinson, Vassilakis, Wang
+source('model_roughness_data.R')
+```
+
+## Empirical dissonance ratings
+
+Empirical ratings from classic studies by @Huron1994 and @bowling2018.
+
+```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
+# Empirical data from Huron 94 and Bowling
+source('empirical_data.R')
+```
+
+## Create variable deltas for the interval pairs
+
+```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
+source('deltas.R')
+```
+
+# Create graphs for selected stimuli
+
+Take four intervals that together span low to high delta in roughness and plot the amplitude and spectra for each.
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE,fig.width=8}
+source('figure_stimuli.R') # Completed in 1 December 2020
+```
+
+# References
+
+<div id="refs"></div>
+
