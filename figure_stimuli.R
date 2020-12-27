@@ -10,10 +10,10 @@ library(seewave)
 library(tuneR)
 fs<-44100
 
-tt <- readMP3("../stimuli/Interval06.mp3")
-P5 <- readMP3("../stimuli/Interval07.mp3")
-m2 <- readMP3("../stimuli/Interval01.mp3")
-M3 <- readMP3("../stimuli/Interval04.mp3")
+tt <- readMP3("stimuli/Interval06.mp3")
+P5 <- readMP3("stimuli/Interval07.mp3")
+m2 <- readMP3("stimuli/Interval01.mp3")
+M3 <- readMP3("stimuli/Interval04.mp3")
 
 
 tt<-tuneR::normalize(tt,unit="1",center = TRUE,level = 1)
