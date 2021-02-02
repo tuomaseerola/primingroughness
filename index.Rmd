@@ -1,23 +1,31 @@
 ---
-title: "Auxiliary data to Automatic Responses to Acoustically Rough Intervals"
+title: "Computational models related to Automatic Responses to Acoustically Rough Intervals"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
  encoding=encoding,
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
-output: html_document
 bibliography: refs.bib
 biblio-style: "apalike"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    theme: united
+    highlight: tango
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-_Created: 26/12/2021_.
+# Notes
 
-These files contains the data and analysis scripts for "Automatic Responses to Acoustically Rough Intervals" concerning computational models of roughness and harmonicity.
+_Created: 1/2/2021_.
 
-## Harmonicity
+These files contains the computational models for "Automatic Responses to Acoustically Rough Intervals", particularly the models of roughness and harmonicity. The repository is available at OSF: [https://osf.io/zmjpd/](https://osf.io/zmjpd/).
+
+# Harmonicity
 
 Harmonicity for three common models: @harrison2018, @parncutt1988 and @milne2013computational, including the ranks of the model means and the model correlations.
 
@@ -26,7 +34,7 @@ Harmonicity for three common models: @harrison2018, @parncutt1988 and @milne2013
 source('model_harmonicity_data.R')
 ```
 
-## Roughness
+# Roughness
 
 Roughness values for three common models: @hutchknopoff1978, @vassilakis2001perceptual, and @wang2013roughness, including the ranks of the model means and the model correlations.
 
@@ -35,7 +43,7 @@ Roughness values for three common models: @hutchknopoff1978, @vassilakis2001perc
 source('model_roughness_data.R')
 ```
 
-## Empirical dissonance ratings
+# Empirical dissonance ratings
 
 Empirical ratings from classic studies by @Huron1994 and @bowling2018.
 
@@ -44,7 +52,7 @@ Empirical ratings from classic studies by @Huron1994 and @bowling2018.
 source('empirical_data.R')
 ```
 
-## Create variable deltas for the interval pairs
+# Create variable deltas for the interval pairs
 
 ```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
 source('deltas.R')

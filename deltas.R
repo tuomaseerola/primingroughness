@@ -40,3 +40,16 @@ data_pairs$Emp_D_Class <-cut(data_pairs$Empirical_Delta,breaks = c(0,median(data
 
 print(knitr::kable(data_pairs,digits = 2))
 
+#### ADDITIONAL MISTUNED PAIRS ------------------
+# deltas for the d2/P5 and s2/S5 pairings
+print('Mistuned pairs')
+
+names_of_pairs_mistuned <- c('d2P5','s2S5')
+data_pairs_mistuned <- data.frame(IntervalPairs=names_of_pairs_mistuned)
+
+data_pairs_mistuned$Roughness_Delta[1]<- detuned$Wang13_interpolated[1] - roughness$RoughnessMean[7] # d2/P5
+data_pairs_mistuned$Roughness_Delta[2]<-detuned$Wang13_interpolated[2] - detuned$Wang13_interpolated[3] #  s2/S5
+
+print(knitr::kable(data_pairs_mistuned,digits = 2,caption = 'Mistuned intervals'))
+
+rm(names_of_pairs_mistuned,names_of_pairs)

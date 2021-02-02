@@ -1,5 +1,4 @@
 # auxiliarity_data.R
-#setwd('/Users/tuomaseerola/Desktop/to_JASA/')
 
 # Harmonicity 3 models: Harrison and Pearce 2018, Parncutt88, Milne13 
 source('model_harmonicity_data.R')
@@ -23,4 +22,3 @@ source('deltas.R')
 
 # Stimulus spectra. The stimuli were available, and now we have created a 
 source('figure_stimuli.R') # Completed in 1 December 2020
-
