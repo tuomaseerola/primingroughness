@@ -19,18 +19,18 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-# Notes
+# Release Notes
 
 _Created: 1/2/2021_.
 
-These files contains the computational models for "Automatic Responses to Acoustically Rough Intervals", particularly the models of roughness and harmonicity. The repository is available at OSF: [https://osf.io/zmjpd/](https://osf.io/zmjpd/).
+These files contains the computational models for "Automatic Responses to Acoustically Rough Intervals", particularly the models of roughness and harmonicity. See also the behavioural data and the analyses at a [separate repository](https://tuomaseerola.github.io/primingroughnessdata/). The data is also available at OSF: [https://osf.io/zmjpd/](https://osf.io/zmjpd/).
 
 # Harmonicity
 
 Harmonicity for three common models: @harrison2018, @parncutt1988 and @milne2013computational, including the ranks of the model means and the model correlations.
 
 ```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
-# Harmonicity 3 models: Harrison and Pearce 2018, Parncutt88, Milne13 
+# Harmonicity 3 models: Harrison & Pearce 2018, Parncutt 1988, Milne 2013 
 source('model_harmonicity_data.R')
 ```
 
@@ -39,7 +39,7 @@ source('model_harmonicity_data.R')
 Roughness values for three common models: @hutchknopoff1978, @vassilakis2001perceptual, and @wang2013roughness, including the ranks of the model means and the model correlations.
 
 ```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
-# Roughness 3 models: Hutchinson, Vassilakis, Wang
+# Roughness 3 models: Hutchinson 1978, Vassilakis 2001, Wang et al 2013
 source('model_roughness_data.R')
 ```
 
@@ -48,7 +48,7 @@ source('model_roughness_data.R')
 Empirical ratings from classic studies by @Huron1994 and @bowling2018.
 
 ```{r,echo=TRUE,results='asis',warning=FALSE,message=FALSE}
-# Empirical data from Huron 94 and Bowling
+# Empirical data from Huron 1994 and Bowling et al 2018
 source('empirical_data.R')
 ```
 
