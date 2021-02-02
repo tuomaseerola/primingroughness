@@ -13,7 +13,7 @@ biblio-style: "apalike"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-_Created: 26/12/2020_.
+_Created: 26/12/2021_.
 
 These files contains the data and analysis scripts for "Automatic Responses to Acoustically Rough Intervals" concerning computational models of roughness and harmonicity.
 
