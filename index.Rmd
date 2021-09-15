@@ -25,6 +25,10 @@ _Created: 1/2/2021_.
 
 These files contains the computational models for "Automatic Responses to Acoustically Rough Intervals", particularly the models of roughness and harmonicity. See also the behavioural data and the analyses at a [separate repository](https://tuomaseerola.github.io/primingroughnessdata/). The data is also available at OSF: [https://osf.io/zmjpd/](https://osf.io/zmjpd/).
 
+The paper is:
+>Armitage, J., Lahdelma, I., & Eerola, T. (2021). Automatic responses to musical intervals: Contrasts in acoustic roughness predict affective priming in Western listeners. _Journal of Acoustical Society of America, 150(551)_. https://doi.org/10.1121/10.0005623
+
+
 # Harmonicity
 
 Harmonicity for three common models: @harrison2018, @parncutt1988 and @milne2013computational, including the ranks of the model means and the model correlations.
